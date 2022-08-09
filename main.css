@@ -1,0 +1,259 @@
+html {
+  background-color: #e8eaed;
+}
+
+/* layout */
+.container {
+  max-width: 560px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  /* fonts */
+  font-family: "Gilroy-Regular";
+  font-size: 14px;
+}
+
+/* white block */
+.white-block {
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.no-bottom-radius {
+  border-radius: 8px 8px 0 0;
+}
+
+/* logo */
+.logo {
+  display: block;
+  width: 122px;
+  height: 42px;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.logo__img {
+  width: inherit;
+  height: inherit;
+}
+
+/* border line */
+.border {
+  height: 1px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+/* utils */
+.mt-16 {
+  margin-top: 16px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.pl-24 {
+  padding-left: 24px;
+}
+
+.pr-24 {
+  padding-right: 24px;
+}
+
+.pt-24 {
+  padding-top: 24px;
+}
+
+.pl-64 {
+  padding-left: 64px !important;
+}
+
+.pr-64 {
+  padding-right: 64px !important;
+}
+
+.pb-18 {
+  padding-bottom: 18px;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* navigation */
+.nav {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 27px;
+  padding-right: 27px;
+  justify-content: space-between;
+}
+
+.nav a {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: end;
+}
+
+.nav .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+/* description */
+.description {
+  margin-top: 16px;
+  padding: 24px;
+  color: #334155;
+}
+
+.description .button {
+  background: #013f7c;
+  border-radius: 12px;
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  height: 52px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.description .description__img {
+  width: 92px;
+  height: 92px;
+  margin-right: 14px;
+}
+
+/* typography */
+h2 {
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+/* order details */
+.order-details {
+  border-radius: 8px 8px 0 0;
+}
+
+.order-details .table-labels {
+  font-size: 12px;
+  font-weight: 400;
+  color: #64748b;
+  justify-content: space-between;
+  padding-bottom: 14px;
+}
+
+.order-details .table-item {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-details .table-item:not(:last-child) {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.order-details .table-labels .name,
+.order-details .table-item .name {
+  width: 140px;
+}
+
+.order-details .table-labels .price,
+.order-details .table-item .price {
+  width: 80px;
+}
+
+.order-details .table-labels .amount,
+.order-details .table-item .amount {
+  width: 45px;
+}
+
+.order-details .table-labels .total,
+.order-details .table-item .total {
+  width: 60px;
+}
+
+.order-details .table-item .name img {
+  width: 52px;
+  height: 52px;
+  margin-right: 12px;
+}
+
+.order-details .table-item .name .title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.order-details .table-item .name .title a {
+  text-decoration: none;
+  color: #334155;
+}
+
+.order-details .table-total {
+  background: #e2e8f0;
+  border-radius: 0 0 8px 8px;
+}
+
+.order-details .delivery-total:not(:last-child) {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* responsiviness */
+@media only screen and (max-width: 450px) {
+  /* For mobile phones: */
+  ::-webkit-scrollbar {
+    width: 0; /* Remove scrollbar space */
+    height: 0;
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+
+  .nav {
+    padding-left: 14px;
+    padding-right: 14px;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+
+  .nav a {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .table-item .title,
+  .table-item .price,
+  .table-item .amount,
+  .table-item .total {
+    font-size: 12px !important;
+  }
+}
